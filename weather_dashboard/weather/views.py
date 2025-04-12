@@ -1,7 +1,7 @@
 import requests
 import os
 from django.http import JsonResponse
-from django.contrib.auth import authenticate, logout
+from django.contrib.auth import authenticate, logout as django_logout
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
@@ -40,7 +40,7 @@ def login(request):
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def logout_view(request):
-    logout(request)
+    django_logout(request)
     return Response({"message": "Logged out successfully."})
 
 
