@@ -1,0 +1,6 @@
+.env
+virtual_waether/
+__pycache__/
+*.pyc
+staticfiles/
+*.sqlite3
