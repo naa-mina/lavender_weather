@@ -1,3 +1,4 @@
+Final slightly techie project
 Weather Dashboard API
 A Django Rest Framework based API that lets users register, login and get real time weather for cities using OpenWeatherMap
 
